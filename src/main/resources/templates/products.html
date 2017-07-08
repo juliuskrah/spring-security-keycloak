@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <meta charset="UTF-8">
-<h1>Hello [[${principal.getName()}]]</h1>
+<h1>Hello [[${#authentication.name}]]</h1>
 <ul th:each="product : ${products}">
     <li>[[${product}]]</li>
 </ul>
